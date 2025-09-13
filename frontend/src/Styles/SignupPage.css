@@ -1,0 +1,149 @@
+/* Page background */
+.register-page {
+  margin-top: 2.5rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  position: fixed; /* Fix the page position */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto; /* Allow scrolling if content is too tall */
+}
+
+/* Registration card */
+.register-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 480px; /* Increased from 420px */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* Logo */
+.register-logo {
+  height: 60px;
+  margin-bottom: 0.5rem;
+}
+
+/* Form fields */
+.register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.form-group input {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #47507e;
+  box-shadow: 0 0 0 3px rgba(71, 80, 126, 0.2);
+}
+
+/* Error messages */
+.error-message {
+  color: red;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.success-message {
+  color: green;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.input-error {
+  font-size: 0.8rem;
+  color: red;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 100%;
+  padding: 0.7rem;
+  background: linear-gradient(90deg, #14b8a6, #0d9488);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #0d9488, #0aa79a);
+  transform: translateY(-2px);
+}
+
+.submit-btn.loading {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Google button */
+.google-btn {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.7rem;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex; /* Add flex display for alignment */
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #333; /* Ensure text is visible */
+}
+
+.google-btn img {
+  width: 20px; /* Set width for Google logo */
+  height: 20px; /* Set height for Google logo */
+}
+
+.google-btn:hover {
+  background: #f7f7f7;
+  border-color: #bbb;
+}
+
+/* Register link button */
+.register-link {
+  margin-top: 0.5rem;
+  background: none;
+  border: none;
+  color: #47507e;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}

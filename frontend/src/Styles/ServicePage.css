@@ -1,0 +1,155 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px;
+  align-items: flex-start; /* Keep left column at top */
+}
+
+/* Left column */
+.left-column {
+  flex: 1 1 300px;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  position: sticky; /* Stay visible on scroll */
+  top: 20px;
+}
+
+.left-column img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.left-column h3 {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.left-column strong {
+  color: #4caf50;
+}
+
+/* Right column */
+.right-column {
+  flex: 2 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Form containers */
+.form-container {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.form-container:hover {
+  transform: translateY(-5px);
+}
+
+.form-container h2 {
+  margin-top: 0;
+  color: #2e7d32;
+  font-size: 20px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-wrapper label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.input-wrapper input:focus,
+.input-wrapper textarea:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 8px rgba(46,125,50,0.3);
+}
+
+.input-wrapper textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Buttons */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2e7d32;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #1b5e20;
+}
+
+.payment-btn {
+  background-color: #388e3c;
+}
+
+.payment-btn:hover {
+  background-color: #1b5e20;
+}
+
+/* Message */
+.message {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+/* Responsive for mobile */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-column {
+    position: relative;
+    top: 0;
+    max-width: 100%;
+  }
+
+  .right-column {
+    width: 100%;
+  }
+}
